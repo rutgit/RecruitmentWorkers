@@ -67,7 +67,7 @@ namespace WebApplication1.DAL
             return await _recruitmentContext.Workers.Include(w=>w.Languages).ToListAsync();
             }   catch(Exception ex)
             {
-                throw new Exception("can't get users😢" + ex);
+                throw new Exception("can't get users" + ex);
             }
         }
     }
